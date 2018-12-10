@@ -1,4 +1,4 @@
-<h2>About RobotDyn-local</h2>
+<h2>About RobotDyn</h2>
 <p>RobotDyn is an international company with offices and representatives located in US, EU, Russia and China. Our
     company was founded in 2014 by an international team of electronics engineers and production experts. Our main goal
     is to develop smart and efficient modules and controllers for use in Automation, Security, IoT, Education and many
