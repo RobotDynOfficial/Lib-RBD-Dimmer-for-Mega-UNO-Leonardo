@@ -1,6 +1,6 @@
 ﻿The following library is used for work with dimmer, it gives ability to control large ammoun of dimmer by the means of hardware timer and external interrupt through previously defined pin:
-For Leonardo, zero-cross used pin D7 
-For other boards used second pin
+<br>For Leonardo, zero-cross used pin D7 
+<br>For other boards used second pin
 
 This library can simplify user code with following functions:
 
