@@ -39,11 +39,11 @@ typedef enum
 
 #elif defined(__AVR_ATmega32U4__)
 #define DIMMER_TIMER 1
-#define INT_vect INT1_vect
-#define INTx INT1
-#define EICRX EICRA
-#define ISCx1 ISC11
-#define ISCx0 ISC10
+#define INT_vect INT6_vect
+#define INTx INT6
+#define EICRX EICRB
+#define ISCx1 ISC61
+#define ISCx0 ISC60
 
 #define TCCRxA_VALUE 0x00 // CTC mode
 #define TCCRxB_VALUE 0x0A// 0b1011 (1 << WGMx2)|(1 << CSx1)|(1 << CSx0)
@@ -103,7 +103,7 @@ static const uint8_t powerBuf[] = {
 };
 #endif
 
-#define ALL_DIMMERS 10
+#define ALL_DIMMERS 100
 
 class dimmerLamp 
 {         

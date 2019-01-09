@@ -1,4 +1,7 @@
-﻿The following library is used for work with dimmer, it gives ability to control large ammoun of dimmer by the means of hardware timer and external interrupt through previously defined pin(second pin is used for each microcontroller)
+﻿The following library is used for work with dimmer, it gives ability to control large ammoun of dimmer by the means of hardware timer and external interrupt through previously defined pin:
+For Leonardo, zero-cross used pin D7 
+For other boards used second pin
+
 This library can simplify user code with following functions:
 
     1. Function  dimmerLamp - this function initializes the number of operating pin and is defined by the user

@@ -24,35 +24,7 @@
 #define _TIMER_COMPA_VECTOR(X) TIMER ## X ## _COMPA_vect
 #define TIMER_COMPA_VECTOR(X) _TIMER_COMPA_VECTOR(X)
 
-/*****
- * for AVR chip with
- * 8-bit timer
- *****
-#if (DIMMER_TIMER == 2)
-#define TCCRxA_VALUE 0x02
-#define TCCRxB_VALUE 0x0A // 0b1010 // (1 << WGMx2)|(1 << CSx1)
-#define OCRxAH_VALUE 0x00
-#define OCRxAL_VALUE 0xF0
-// CTC mode, Prescaler = 8 => Cycle = 0.5us @ 16MHz
 
-*****
- * for AVR_ATmega1280/2560 & AVR_ATmega32U4 chip
- * 16-bit timer
- *****
-#elif (DIMMER_TIMER == 1 || DIMMER_TIMER == 4 || DIMMER_TIMER == 5)
-#define TCCRxA_VALUE 0x00 // CTC mode
-#define TCCRxB_VALUE 0x0B // 0b1011 // (1 << WGMx2)|(1 << CSx1)|(1 << CSx0)
-#define OCRxAH_VALUE 0x00
-#define OCRxAL_VALUE 0x18
-// CTC mode, Prescaler = 64 => Cycle = 4us @ 16MHz
-
-#elif (DIMMER_TIMER == 3 )
-#define TCCRxA_VALUE 0x00 // CTC mode
-#define TCCRxB_VALUE 0x0A // 0b1011 // (1 << WGMx2)|(1 << CSx1)|(1 << CSx0)
-#define OCRxAH_VALUE 0x00
-#define OCRxAL_VALUE 0x18
-// CTC mode, Prescaler = 64 => Cycle = 4us @ 16MHz
-#endif*/
 
 int dim_tim[10];
 int dim_max[10];
